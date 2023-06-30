@@ -36,6 +36,7 @@ class AudioWeather{
     toogle(): void {
         if(!this.audioStatePlay){
             this.audio.play()
+            this.audio.loop=true
             this.audioStatePlay = true
             this.audioImage.src = pauseSvg
             backgroundImage.style.backgroundImage=`url(${this.pictureBg})`
