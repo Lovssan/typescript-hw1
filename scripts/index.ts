@@ -2,10 +2,10 @@ const backgroundImage = <HTMLElement>document.querySelector('.container')
 const volume= <HTMLInputElement>document.querySelector('#customRange2')
 const soundsConainer = <HTMLElement>document.querySelector('.row')
 
-const pauseSvg = '../assets/icons/pause.svg'
-const summerBG = '../assets/summer-bg.jpg'
-const winterBG = '../assets/winter-bg.jpg'
-const rainBG = '../assets/rainy-bg.jpg'
+const pauseSvg = './assets/icons/pause.svg'
+const summerBG = './assets/summer-bg.jpg'
+const winterBG = './assets/winter-bg.jpg'
+const rainBG = './assets/rainy-bg.jpg'
 
 
 class AudioWeather{
@@ -16,7 +16,7 @@ class AudioWeather{
     audioStatePlay: boolean
 
     constructor(audio: string, pictureBg: string){
-        this.audio = new Audio(`../assets/sounds/${audio}.mp3`)
+        this.audio = new Audio(`./assets/sounds/${audio}.mp3`)
         this.pictureBg = pictureBg
         this.audioImage = <HTMLImageElement>document.querySelector(`#${audio}`)
         this.audioImageSrc = this.audioImage.src
