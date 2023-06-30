@@ -2,16 +2,16 @@
 const backgroundImage = document.querySelector('.container');
 const volume = document.querySelector('#customRange2');
 const soundsConainer = document.querySelector('.row');
-const pauseSvg = '/assets/icons/pause.svg';
-const summerBG = '/assets/summer-bg.jpg';
-const winterBG = '/assets/winter-bg.jpg';
-const rainBG = '/assets/rainy-bg.jpg';
+const pauseSvg = 'assets/icons/pause.svg';
+const summerBG = 'assets/summer-bg.jpg';
+const winterBG = 'assets/winter-bg.jpg';
+const rainBG = 'assets/rainy-bg.jpg';
 class AudioWeather {
     constructor(audio, pictureBg) {
         this.soundLevel = () => {
             this.audio.volume = +volume.value;
         };
-        this.audio = new Audio(`/assets/sounds/${audio}.mp3`);
+        this.audio = new Audio(`assets/sounds/${audio}.mp3`);
         this.pictureBg = pictureBg;
         this.audioImage = document.querySelector(`#${audio}`);
         this.audioImageSrc = this.audioImage.src;
