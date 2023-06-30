@@ -6,6 +6,7 @@ const pauseSvg = '../assets/icons/pause.svg'
 const summerBG = '../assets/summer-bg.jpg'
 const winterBG = '../assets/winter-bg.jpg'
 const rainBG = '../assets/rainy-bg.jpg'
+console.log('awd');
 
 
 class AudioWeather{
