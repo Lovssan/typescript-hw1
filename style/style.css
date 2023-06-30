@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: "RobotoItalic";
+    src: url("../fonts/Roboto-BlackItalic.ttf");
+}
+*, body{
+    margin: 0;
+    padding: 0;
+    font-family: "RobotoItalic";
+}
+.container{
+    text-align: center;
+    background-image: url('../assets/rainy-bg.jpg');
+    padding: 15px;
+    min-height: 100vh;
+    min-width: 650px;
+    max-width: 1320px;
+    transition: 2s
+}
+.row{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+.h1-center{
+    margin-bottom: 10px;
+    font-size: xxx-large;
+    font-weight: bold;
+    text-shadow: 5px 3px 7px;
+    color: #e57a2d;
+}
+.text-center{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius:  15px;
+    overflow: hidden; 
+    margin: 5px;
+}
+.rounded{
+    height: inherit;
+}
+.range .form-range{
+    margin-top: 10px;
+    width: 150px;
+}
+.svg{
+    position: absolute;
+    left: 77px;
+    top: 75px;
+    width: 50px;
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSounds</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="shortcut icon" href="/assets/icons/weathericon.png" type="image/png">
+</head>
+<body>
+    <main >
+        <div class="container">
+            <h1 class="h1-center">Weather Sounds</h1>
+            <div class="row">
+                <div class="text-center">
+                    <img src="./assets/rainy-bg.jpg" class="rounded" alt="...">
+                    <img src="./assets/icons/cloud-rain.svg" id="rain" data-id="rain" class="svg">
+                </div>
+                <div class="text-center">
+                    <img src="./assets/summer-bg.jpg" class="rounded" alt="...">
+                    <img src="./assets/icons/cloud-summer.svg" id="summer" data-id="summer" class="svg">
+                </div>
+                <div class="text-center">
+                    <img src="./assets/winter-bg.jpg" class="rounded" alt="...">
+                    <img src="./assets/icons/cloud-winter.svg" id="winter" data-id="winter" class="svg">
+                </div>
+            </div>
+            <div class="range">
+                <input type="range" class="form-range" min="0" max="1" step="0.01" id="customRange2">
+            </div>
+        </div>  
+        
+    </main>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
