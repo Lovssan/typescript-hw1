@@ -13,6 +13,7 @@ class AudioWeather{
     pictureBg: string
     audioImage: HTMLImageElement
     audioImageSrc: string
+    audioState: boolean
 
     constructor(audio: string, pictureBg: string){
         this.audioName = audio
@@ -20,6 +21,7 @@ class AudioWeather{
         this.pictureBg = pictureBg
         this.audioImage = <HTMLImageElement>document.querySelector(`#${audio}`)
         this.audioImageSrc = this.audioImage.src
+        this.audioState = false
         this.soundPlay()
     }
     soundPlay(): void {
@@ -30,13 +32,15 @@ class AudioWeather{
     toogle=(event: Event): void =>{
         const target = event.target as HTMLElement
         const id = target.dataset.id
-        if(id===this.audioName){
+        if(id===this.audioName&&!this.audioState){
             this.audio.play()
             this.audio.loop=true
+            this.audioState=true
             this.audioImage.src = pauseSvg
             backgroundImage.style.backgroundImage=`url(${this.pictureBg})`
         }else{
             this.audio.pause()
+            this.audioState=false
             this.audioImage.src = this.audioImageSrc
         }
     }
